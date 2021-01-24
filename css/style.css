@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
 }
-.nav__list li {
+.nav__list li:not(:first-child) {
   margin-left: 44px;
 }
 .nav__link {
@@ -197,6 +197,7 @@ h1, h2, h3, h4, h5, h6 {
   .banner__form {
     width: 100%;
     flex-direction: column;
+    margin: 0 auto;
   }
   .banner__form .form__input {
     width: 100%;

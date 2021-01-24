@@ -87,7 +87,7 @@ $fontfamily: 'Ubuntu', sans-serif;
 	&__list {
 		display: flex;
 		align-items: center;
-		li{
+		li:not(:first-child){
 			margin-left: 44px;
 		}
 	}
@@ -159,6 +159,7 @@ $fontfamily: 'Ubuntu', sans-serif;
 		&__form {
 			width: 100%;
 			flex-direction: column;
+			margin: 0 auto;
 			.form__input{
 				width: 100%;
 				margin: 0 0 15px 0;
