@@ -202,6 +202,9 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     margin: 0 0 15px 0;
   }
+  .banner__form .form__btn {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 575px) {
   .banner {
@@ -539,6 +542,9 @@ h1, h2, h3, h4, h5, h6 {
   .contact__input {
     flex: 1 1 90%;
     margin: 0 0 15px 0;
+  }
+  .contact .form__btn {
+    margin-left: 0;
   }
 }
 
