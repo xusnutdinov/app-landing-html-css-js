@@ -197,6 +197,43 @@ $fontfamily: 'Ubuntu', sans-serif;
 			width: 100%;
 		}
 	}
+	@media screen and (max-width: $lg){
+		padding: 89px 0 83px;
+		&__body {
+			padding: 80px 0 0 0;
+			flex-direction: column;
+		}
+		&__list{
+			flex: 1 1 100%;
+			order: 2;
+		}
+		&__image {
+			flex: 0 0 100%;
+			order: 1;
+		}
+		&__img{
+			display: block;
+			width: 80%;
+			margin: 0 auto 25px auto;
+		}
+	}
+	@media screen and (max-width: $md){
+		padding: 69px 0 63px;
+		&__body {
+			padding: 60px 0 0 0;
+			flex-direction: column;
+		}
+	}
+	@media screen and (max-width: $sm){
+		padding: 39px 0 33px;
+		&__body {
+			padding: 30px 0 0 0;
+			flex-direction: column;
+		}
+		&__item {
+			margin: 0 0 22px 0;
+		}
+	}
 }
 
 .item-advantages {
@@ -227,13 +264,131 @@ $fontfamily: 'Ubuntu', sans-serif;
 		font-weight: 400;
 		line-height: 22px;
 	}
+	@media screen and (max-width: $lg){
+		&__top{
+			justify-content: center;
+		}
+		&__text{
+			max-width: 100%;
+		}
+	}
 }
 
 //===========================================================================
 
 //===========================================================================
-.contact {
 
+.different {
+	background-color: #f6f6f7;
+	position: relative;
+	overflow: hidden;
+	padding: 156px 0 123px;
+	z-index: 1;
+	.container{
+		max-width: 1295px;
+	}
+	.section-title{
+		position: relative;
+		z-index: 3;
+	}
+	&__carousel {
+		position: relative;
+		z-index: 3;
+	}
+	&__img {
+		position: absolute;
+		bottom: 0;
+		right: -904px;
+		z-index: 2;
+	}
+	@media screen and (max-width: $md){
+		padding: 106px 0 73px;
+	}
+	@media screen and (max-width: $sm){
+		padding: 66px 0 43px;
+	}
+}
+.carousel {
+	&__inner {
+		max-width: 725px;
+		margin: 156px 0 0 0;
+	}
+	&__control {
+		margin: 38px 0 0 13px;
+		max-width: 725px;
+		text-align: right;
+	}
+	&__btn {
+		width: 25px;
+		height: 25px;
+		color: rgba(45, 57, 76, 0.27);
+		font-family: Ubuntu;
+		font-size: 15px;
+		font-weight: 500;
+		background-color: transparent;
+		margin: 0 0 0 5px;
+	}
+	&__btn-active {
+		border-radius: 50%;
+		color: #ffffff;
+		font-size: 15px;
+		font-weight: 700;
+		border: 2px solid #64a4d7;
+		background-color: #64a4d7;
+	}
+	@media screen and (max-width: $md){
+		&__inner{
+			margin: 106px 0 0 0;
+		}
+		&__btn {
+			width: 30px;
+			height: 30px;
+		}
+	}
+	@media screen and (max-width: $sm){
+		&__inner{
+			margin: 66px 0 0 0;
+		}
+		&__control{
+			text-align: center;
+		}
+		&__btn {
+			width: 33px;
+			height: 33px;
+		}
+	}
+}
+.carousel-item {
+	&__top {
+		display: flex;
+		align-items: center;
+	}
+	&__img {
+		width: 63px;
+		margin-right: 29px;
+		margin-left: -3px;
+		img{
+			width: 100%;
+		}
+	}
+	&__title {
+		color: rgba(45, 57, 76, 0.88);
+		font-size: 28px;
+		font-weight: 400;
+	}
+	&__text {
+		color: rgba(90, 98, 110, 0.89);
+		font-family: "Open Sans";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 32px;
+		margin: 25px 0 0 0;
+	}
+}
+//===========================================================================
+
+//===========================================================================
+.contact {
 	&__inner {
 		max-width: 877px;
 		padding: 139px 0 104px 0;
@@ -283,93 +438,23 @@ $fontfamily: 'Ubuntu', sans-serif;
 			color: rgba(90, 98, 110, 0.28);
 		}
 	}
-}
 
-//===========================================================================
-
-//===========================================================================
-
-.different {
-	background-color: #f6f6f7;
-	position: relative;
-	overflow: hidden;
-	padding: 156px 0 123px;
-	z-index: 1;
-	.container{
-		max-width: 1295px;
-	}
-	.section-title{
-		position: relative;
-		z-index: 3;
-	}
-	&__carousel {
-		position: relative;
-		z-index: 3;
-	}
-	&__img {
-		position: absolute;
-		bottom: 0;
-		right: -904px;
-		z-index: 2;
-	}
-}
-.carousel {
-	&__inner {
-		max-width: 725px;
-		margin: 156px 0 0 0;
-	}
-	&__control {
-		margin: 38px 0 0 13px;
-		max-width: 725px;
-		text-align: right;
-	}
-	&__btn {
-		width: 25px;
-		height: 25px;
-		color: rgba(45, 57, 76, 0.27);
-		font-family: Ubuntu;
-		font-size: 15px;
-		font-weight: 500;
-		background-color: transparent;
-		margin: 0 0 0 5px;
-	}
-	&__btn-active {
-		border-radius: 50%;
-		color: #ffffff;
-		font-size: 15px;
-		font-weight: 700;
-		border: 2px solid #64a4d7;
-		background-color: #64a4d7;
-	}
-}
-.carousel-item {
-	&__top {
-		display: flex;
-		align-items: center;
-	}
-	&__img {
-		width: 63px;
-		margin-right: 29px;
-		margin-left: -3px;
-		img{
-			width: 100%;
+	@media screen and (max-width: $md){
+		&__inner{
+			padding: 55px 0 35px;
+		}
+		&__form{
+			flex-direction: column;
+		}
+		&__input{
+			flex: 1 1 90%;
+			margin:0 0 15px 0;
 		}
 	}
-	&__title {
-		color: rgba(45, 57, 76, 0.88);
-		font-size: 28px;
-		font-weight: 400;
-	}
-	&__text {
-		color: rgba(90, 98, 110, 0.89);
-		font-family: "Open Sans";
-		font-size: 16px;
-		font-weight: 400;
-		line-height: 32px;
-		margin: 25px 0 0 0;
-	}
 }
+
 //===========================================================================
+
 
 //===========================================================================
 
@@ -387,17 +472,28 @@ $fontfamily: 'Ubuntu', sans-serif;
 	.nav__link{
 		font-size: 14px;
 	}
-}
-.container {
-}
-.logo {
-	&__img {}
-}
-.nav {
-	&__list {}
-	&__item {}
-	&__link {
+	@media screen and (max-width: $md){
+		padding: 34px 0;
+		&__inner{
+			flex-direction: column;
+		}
+		.logo{
+			margin-bottom: 15px;
+		}
+	}
+	@media screen and (max-width: $sm){
+		padding: 24px 0 14px;
 		
+		.nav__list{
+			flex-direction: column;
+			li{
+				margin-bottom: 10px;
+			}
+		}
+		.nav__link{
+			font-size: 18px;
+		}
+
 	}
 }
 //===========================================================================
