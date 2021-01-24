@@ -1,0 +1,403 @@
+//ШРИФТЫ=====================================================================
+@import "fonts.scss";
+//===========================================================================
+
+//ПЕРЕМЕННЫЕ=================================================================
+$xll: 1399px;
+$xl: 1199px;
+$lg: 991px;
+$md: 767px;
+$sm: 575px;
+$fontfamily: 'Ubuntu', sans-serif;
+//===========================================================================
+
+@import "null.scss";
+
+//БЛОКИ========================================================
+.container {
+	max-width: 1289px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.logo {
+	&__img {}
+}
+
+.form {
+	display: flex;
+	align-items: center;
+	&__input {
+		width: 423px;
+		padding: 20px 28px;
+		border-radius: 5px;
+		border: 1px solid rgba(255, 255, 255, 0.15);
+		background-color: #ffffff;
+		color: rgba(45, 57, 76, 0.81);
+		letter-spacing: 2.2px;
+
+		&::placeholder{
+			color: rgba(45, 57, 76, 0.34);
+		}
+	}
+	&__btn {
+		padding: 20px 24px;
+		color: #ffffff;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 18px;
+		background-color: #77c344;
+		text-transform: uppercase;
+		border-radius: 5px;
+		margin-left: 38px;
+		transition: all 0.3s linear;
+		&:hover{
+			background-color: #6BB139;
+		}
+	}
+}
+.section-title {
+	color: rgba(45, 57, 76, 0.85);
+	font-size: 40px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+}
+//===========================================================================
+
+//===========================================================================
+.header {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 28px 0 28px 0;
+	}
+	&__nav {
+
+	}
+}
+.nav {
+	&__list {
+		display: flex;
+		align-items: center;
+		li{
+			margin-left: 44px;
+		}
+	}
+	&__link {
+		font-weight: 400;
+		font-size: 16px;
+		color: rgba(45, 57, 76, 0.84);
+		text-transform: uppercase;
+		transition: all 0.3s linear;
+		&:hover{
+			color: rgba(45, 57, 76, 1);
+		}
+	}
+}
+
+//===========================================================================
+
+//===========================================================================
+
+.banner {
+	background: #54a3da url(../img/banner-bg.jpg) center / cover no-repeat;
+	padding: 221px 0 252px;
+	&__container {
+		max-width: 1228px;
+		padding: 0 15px;
+		margin: 0 auto;
+	}
+	&__title {
+		color: #f7f6f2;
+		font-size: 52px;
+		font-weight: 700;
+		line-height: 72px;
+		text-transform: uppercase;
+		max-width: 485px;
+		margin: 0 0 12px 0;
+	}
+	&__subtitle {
+		color: #ffffff;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 47px;
+		max-width: 565px;
+	    letter-spacing: -0.9px;
+	    margin-left: 2px;
+	}
+	&__label {
+		color: #ffffff;
+		text-transform: capitalize;
+		margin: 50px 0 30px 6px;
+		span{
+			display: inline-block;
+			background-color: #ffce54;
+			padding: 6px 9px;
+			text-transform: uppercase;
+			border-radius: 5px;
+			margin-left: 1px;
+		}
+	}
+	&__form {
+		max-width: 573px;
+	}
+}
+
+
+//===========================================================================
+
+//===========================================================================
+.company {
+	background-color: #f8f8f8;
+	&__container {
+		max-width: 1196px;
+		margin: 0 auto;
+		padding: 61px 15px 55px;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__item {
+		max-width: 169px;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+//===========================================================================
+
+//===========================================================================
+
+.advanteges {
+	padding: 109px 0 85px;
+	overflow: hidden;
+	.container{
+		max-width: 1253px;
+	}
+	&__body {
+		display: flex;
+		padding: 119px 0 0 0;
+	}
+	&__list {
+		flex: 0 0 50%;
+		margin: 6px -3px 0 0;
+	
+	}
+	&__item {
+		margin: 0 0 42px 0;
+	}
+	&__image {
+		flex: 0 0 50%;
+		img{
+			width: 100%;
+		}
+	}
+}
+
+.item-advantages {
+	&__top {
+		display: flex;
+		align-items: center;
+		margin: 0 0 16px 0;
+	}
+	&__img {
+		max-width: 56px;
+		margin: 0 12px 0 -3px;
+		img{
+			width: 100%;
+		}
+	}
+
+	&__subheading {
+		color: rgba(45, 57, 76, 0.9);
+		font-size: 22px;
+		font-weight: 500;
+		letter-spacing: -1.185px;
+	}
+	&__text {
+		max-width: 492px;
+		color: #9499a2;
+		font-family: "Open Sans";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 22px;
+	}
+}
+
+//===========================================================================
+
+//===========================================================================
+.contact {
+
+	&__inner {
+		max-width: 877px;
+		padding: 139px 0 104px 0;
+		margin: 0 auto;
+	}
+	&__title {
+		margin: 0 0 38px;
+	}
+	&__text {
+		color: #5a626e;
+		font-size: 24px;
+		font-weight: 400;
+		font-style: italic;
+		line-height: 32px;
+		text-align: center;
+		margin: 0 0 61px 0;
+	    letter-spacing: -0.79px;			
+	}
+	&__form {
+		.form__btn{
+			color: #ffffff;
+			font-family: Ubuntu;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 20px;
+			text-transform: uppercase;
+		    padding: 24px 51px 24px 58px;
+		    letter-spacing: 1.2px;
+		}
+	}
+	&__input {
+		width: 630px;
+		position: relative;
+		border: 1px solid rgba(0, 0, 0, 0.18);
+		background-color: #ffffff;
+		background-image: url(../img/icons/email.png);
+		background-repeat: no-repeat;
+		background-position: 24px;
+		color: rgba(90, 98, 110, 0.68);
+		font-family: "Open Sans";
+		font-size: 21px;
+		font-weight: 300;
+		padding: 20px 24px 19px 69px;
+		z-index: 1;
+		letter-spacing: 0.2px;
+		&::placeholder{
+			color: rgba(90, 98, 110, 0.28);
+		}
+	}
+}
+
+//===========================================================================
+
+//===========================================================================
+
+.different {
+	background-color: #f6f6f7;
+	position: relative;
+	overflow: hidden;
+	padding: 156px 0 123px;
+	z-index: 1;
+	.container{
+		max-width: 1295px;
+	}
+	.section-title{
+		position: relative;
+		z-index: 3;
+	}
+	&__carousel {
+		position: relative;
+		z-index: 3;
+	}
+	&__img {
+		position: absolute;
+		bottom: 0;
+		right: -904px;
+		z-index: 2;
+	}
+}
+.carousel {
+	&__inner {
+		max-width: 725px;
+		margin: 156px 0 0 0;
+	}
+	&__control {
+		margin: 38px 0 0 13px;
+		max-width: 725px;
+		text-align: right;
+	}
+	&__btn {
+		width: 25px;
+		height: 25px;
+		color: rgba(45, 57, 76, 0.27);
+		font-family: Ubuntu;
+		font-size: 15px;
+		font-weight: 500;
+		background-color: transparent;
+		margin: 0 0 0 5px;
+	}
+	&__btn-active {
+		border-radius: 50%;
+		color: #ffffff;
+		font-size: 15px;
+		font-weight: 700;
+		border: 2px solid #64a4d7;
+		background-color: #64a4d7;
+	}
+}
+.carousel-item {
+	&__top {
+		display: flex;
+		align-items: center;
+	}
+	&__img {
+		width: 63px;
+		margin-right: 29px;
+		margin-left: -3px;
+		img{
+			width: 100%;
+		}
+	}
+	&__title {
+		color: rgba(45, 57, 76, 0.88);
+		font-size: 28px;
+		font-weight: 400;
+	}
+	&__text {
+		color: rgba(90, 98, 110, 0.89);
+		font-family: "Open Sans";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 32px;
+		margin: 25px 0 0 0;
+	}
+}
+//===========================================================================
+
+//===========================================================================
+
+.footer {
+	background-color: #f9f9f9;
+	padding: 54px 0;
+	.container{
+		max-width: 1289px;
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.nav__link{
+		font-size: 14px;
+	}
+}
+.container {
+}
+.logo {
+	&__img {}
+}
+.nav {
+	&__list {}
+	&__item {}
+	&__link {
+		
+	}
+}
+//===========================================================================
