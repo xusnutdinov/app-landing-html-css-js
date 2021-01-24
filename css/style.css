@@ -119,6 +119,12 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   padding: 28px 0 28px 0;
 }
+@media screen and (max-width: 767px) {
+  .header__nav {
+    display: none;
+  }
+}
+
 .nav__list {
   display: flex;
   align-items: center;
@@ -180,6 +186,40 @@ h1, h2, h3, h4, h5, h6 {
 .banner__form {
   max-width: 573px;
 }
+@media screen and (max-width: 767px) {
+  .banner {
+    padding: 141px 0 172px;
+    text-align: center;
+  }
+  .banner__title, .banner__subtitle {
+    margin: 0 auto;
+  }
+  .banner__form {
+    width: 100%;
+    flex-direction: column;
+  }
+  .banner__form .form__input {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .banner {
+    padding: 100px 0 100px;
+    text-align: center;
+  }
+  .banner__title, .banner__subtitle {
+    margin: 0 auto;
+  }
+  .banner__form {
+    width: 100%;
+    flex-direction: column;
+  }
+  .banner__form .form__input {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+}
 
 .company {
   background-color: #f8f8f8;
@@ -199,6 +239,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 .company__item img {
   max-width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .company__container {
+    padding: 41px 15px 35px;
+  }
+  .company__item {
+    max-width: 100px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .company__container {
+    padding: 21px 15px 10px;
+  }
+  .company__list {
+    flex-direction: column;
+  }
+  .company__item {
+    max-width: 140px;
+    margin: 0 0 15px 0;
+  }
 }
 
 .advanteges {
@@ -357,9 +417,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   background-color: transparent;
   margin: 0 0 0 5px;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+.carousel__btn:hover {
+  color: #ffffff;
+  background-color: #64a4d7;
 }
 .carousel__btn-active {
-  border-radius: 50%;
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
@@ -468,6 +533,9 @@ h1, h2, h3, h4, h5, h6 {
   .contact__form {
     flex-direction: column;
   }
+  .contact__form .form__input {
+    width: 100%;
+  }
   .contact__input {
     flex: 1 1 90%;
     margin: 0 0 15px 0;
@@ -508,7 +576,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
   }
   .footer .nav__list li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .footer .nav__link {
     font-size: 18px;
